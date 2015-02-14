@@ -1,0 +1,17 @@
+## Typical Run Macro for the Compton Suppression Spectrometer Simulation
+
+## The required initialization line
+/run/initialize
+
+## Start up the visualization and set various parameters
+/vis/open OGLSX
+/vis/viewer/set/viewpointThetaPhi -85.0 90.0
+/vis/viewer/set/style s
+/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/drawVolume
+/vis/scene/add/axes
+/vis/scene/endOfEventAction accumulate
+/tracking/storeTrajectory 1
+/vis/viewer/zoom 2
+
+
