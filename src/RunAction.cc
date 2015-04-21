@@ -77,6 +77,7 @@ void RunAction::EndOfRunAction(const G4Run* aRun)
   man->Write();
   man->CloseFile();
 
+
   runTimer->Stop(); // stop the timer and print out time stuff
 
   G4cout << "### Run " << aRun->GetRunID() << " end." << G4endl;
